@@ -1,0 +1,45 @@
+diff -up ./build.xml.sav ./build.xml
+--- ./build.xml.sav	2008-04-10 17:15:19.000000000 -0400
++++ ./build.xml	2008-04-10 17:16:54.000000000 -0400
+@@ -48,6 +48,9 @@
+       <property name="javac.debug" value="true"/>
+       <property name="javac.deprecation" value="false"/>
+ 
++      <property name="source.version" value="1.5"/>
++      <property name="target.version" value="1.5"/>
++
+       <available property="jndi.present" classname="javax.naming.Context"/>
+       <available property="jdbc3.present" classname="java.sql.Savepoint"/>
+    </target>
+@@ -108,7 +111,8 @@
+                noindex="false"
+                nohelp="true"
+                nonavbar="false"
+-               serialwarn="false">
++               serialwarn="false"
++               source="${source.version}">
+           <link href="http://java.sun.com/j2se/1.4.2/docs/api"/>
+           <link href="http://jakarta.apache.org/commons/pool/apidocs"/>
+       </javadoc>
+@@ -123,7 +127,9 @@
+              classpath="${classpath}"
+              debug="${javac.debug}"
+              deprecation="${javac.deprecation}"
+-             optimize="${javac.optimize}">
++             optimize="${javac.optimize}"
++             source="${source.version}"
++             target="${target.version}">
+          <exclude name="org/apache/commons/dbcp/BasicDataSourceFactory.java"
+              unless="jndi.present"/>
+          <exclude name="org/apache/commons/dbcp/datasources/**"
+@@ -139,7 +145,9 @@
+              srcdir="${src.test.dir}"
+              debug="${javac.debug}"
+              deprecation="${javac.deprecation}"
+-             optimize="${javac.optimize}">
++             optimize="${javac.optimize}"
++             source="${source.version}"
++             target="${target.version}">
+         <classpath>
+           <pathelement location="${build.classes.dir}" /> 
+           <pathelement location="${build.test-classes.dir}" /> 

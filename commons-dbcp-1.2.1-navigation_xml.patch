@@ -1,0 +1,11 @@
+--- xdocs/navigation.xml.sav	2006-04-12 16:11:56.000000000 +0200
++++ xdocs/navigation.xml	2006-04-12 16:12:07.000000000 +0200
+@@ -14,7 +14,7 @@
+    See the License for the specific language governing permissions and
+    limitations under the License.
+   -->
+-<!DOCTYPE org.apache.commons.menus SYSTEM '../../commons-build/menus/menus.dtd'>
++<!DOCTYPE org.apache.commons.menus SYSTEM '../commons-build/menus/menus.dtd'>
+ <project name="Commons DBCP">
+     <title>Commons DBCP</title>
+     <body>

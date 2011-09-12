@@ -1,0 +1,11 @@
+--- project.properties.sav	2006-04-12 16:17:46.000000000 +0200
++++ project.properties	2006-04-12 16:17:55.000000000 +0200
+@@ -6,7 +6,7 @@
+ maven.javadoc.author=false
+ maven.javadoc.links=http://java.sun.com/j2se/1.4.2/docs/api,http://jakarta.apache.org/commons/pool/apidocs
+ 
+-maven.xdoc.jsl=../commons-build/commons-site.jsl
++maven.xdoc.jsl=commons-build/commons-site.jsl
+ maven.xdoc.date=bottom
+ maven.xdoc.poweredby.image=maven-feather.png
+ maven.xdoc.version=${pom.currentVersion}

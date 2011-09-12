@@ -1,0 +1,18 @@
+--- src/test/org/apache/commons/dbcp/TestJOCLed.java.sav	2006-04-12 15:57:50.000000000 +0200
++++ src/test/org/apache/commons/dbcp/TestJOCLed.java	2006-04-12 15:58:27.000000000 +0200
+@@ -45,6 +45,7 @@
+     private PoolingDriver driver = null;
+     
+     public void setUp() throws Exception {
++        super.setUp();
+         driver = new PoolingDriver();
+         PoolingDriver.setAccessToUnderlyingConnectionAllowed(true);
+     }
+@@ -52,6 +53,7 @@
+     public void tearDown() throws Exception {
+         driver.closePool("testpool");
+         DriverManager.deregisterDriver(driver);
++        super.tearDown();
+     }
+ 
+ }

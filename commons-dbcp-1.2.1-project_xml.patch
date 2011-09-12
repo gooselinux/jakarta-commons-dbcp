@@ -1,0 +1,18 @@
+--- ./project.xml.sav	2004-06-12 09:42:20.000000000 -0400
++++ ./project.xml	2006-07-20 17:14:46.000000000 -0400
+@@ -219,6 +219,7 @@
+       </resource>
+       <resource>
+         <targetPath>META-INF</targetPath>
++        <directory>${basedir}</directory>
+         <includes>
+           <include>NOTICE.txt</include>
+         </includes>
+@@ -227,7 +228,6 @@
+   </build>
+   
+   <reports>
+-    <report>maven-changelog-plugin</report>
+     <report>maven-changes-plugin</report>
+     <report>maven-developer-activity-plugin</report>
+     <report>maven-file-activity-plugin</report>
